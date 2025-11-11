@@ -47,3 +47,11 @@ console.log(typeof email);
 console.log(typeof online);
 console.log(typeof forSale);
 console.log(typeof isStudent);
+
+let fullName = "william espitia"
+let AGE = 28;
+let student = false;
+
+document.getElementById("p1").textContent = `your name is ${fullName}`;
+document.getElementById("p2").textContent = `you are ${AGE} years old`;
+document.getElementById("p3").textContent = `are you enrolled in school? ${student}`;
