@@ -23,6 +23,7 @@ else {
 }
 */
 
+/*
 let isStudent = true;
 
 if(isStudent) {
@@ -31,4 +32,23 @@ if(isStudent) {
 
 else {
     console.log("you are not a student");
+}
+*/
+
+// NESTED IF STATEMENTS //
+let age = 18;
+let hasLicense = true;
+
+if(age >= 16) {
+    console.log("you are old enough to drive");
+
+    if(hasLicense) {
+        console.log("you have your license")
+    }
+    else {
+        console.log("you do not have your license yet")
+    }
+}
+else {
+    console.log("you must be 16+ to have a license");
 }
