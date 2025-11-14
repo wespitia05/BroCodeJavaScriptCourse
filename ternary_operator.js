@@ -14,3 +14,12 @@ let greeting = time < 12 ? "good morning!" : "good afternoon!";
 console.log(greeting);
 */
 
+/*
+let isStudent = true;
+let message = isStudent ? "you are a student" : "you are not a student";
+console.log(message);
+*/
+
+let purchaseAmt = 95;
+let discount = purchaseAmt >= 100 ? 10 : 0;
+console.log(`your total is $${purchaseAmt - purchaseAmt * (discount/100)}`);
