@@ -6,6 +6,7 @@ let username = window.prompt("enter your username:");
 
 // main idea is to make first letter uppercase,
 // and make every letter after the first letter lowercase
+/*
 username = username.trim();
 let letter = username.charAt(0);
 letter = letter.toUpperCase();
@@ -13,7 +14,11 @@ letter = letter.toUpperCase();
 let extraChars = username.slice(1);
 extraChars = extraChars.toLowerCase();
 username = letter + extraChars;
+*/
 
 console.log(username);
 
 // ----- METHOD CHAINING ----- //
+username = username.trim().charAt(0).toUpperCase() + username.trim().slice(1).toLowerCase();
+
+console.log(username);
