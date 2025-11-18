@@ -1,6 +1,25 @@
 // string methods = allow you to manpulate and work with text (strings)
 
 let username = " william ";
+let phoneNumber = "123-456-7890";
+
+// removing all dashes in phone number
+// choose character to remove, then character to replace it with
+phoneNumber = phoneNumber.replaceAll("-", "/");
+console.log(phoneNumber);
+
+// checking if string starts with a specified character
+let result = username.startsWith(" ");
+console.log(result); // returns boolean
+
+// checking if string ends with a specified character
+let endResult = username.startsWith(" ");
+console.log(endResult); // returns boolean
+
+// includes method, does the string contain the specified character
+console.log(username.includes(" "));
+console.log(username.includes("w"));
+console.log(username.includes("W"));
 
 // getting character at certain index
 console.log(username.charAt(0));
