@@ -6,6 +6,7 @@
 //                     NOT = !
 
 const temp = 200;
+const isSunny = false;
 
 // using &&
 /*
@@ -15,9 +16,17 @@ if(temp > 0 && temp <= 30) {
 */
 
 // using ||
+/*
 if(temp <= 0 || temp > 30) {
     console.log("the weather is BAD");
 }
 else {
     console.log("the weather is GOOD");
+*/
+
+if(!isSunny) {
+    console.log("it is CLOUDY");
+}
+else {
+    console.log("it is SUNNY")
 }
