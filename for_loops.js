@@ -37,3 +37,13 @@ for(let i = 10; i > 0; i--) {
 }
 console.log("HAPPY NEW YEAR");
 */
+
+for(let i = 1; i <= 20; i++) {
+    if(i == 13) {
+        continue; // doesn't include this value, continues
+        // break; // ends loop entirely at this value
+    }
+    else {
+        console.log(i);
+    }
+}
