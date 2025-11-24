@@ -3,6 +3,7 @@
 //            calls the function to execute the code
 
 // example one
+/*
 function happyBirthday(username, age) {
     console.log("happy birthday to you!");
     console.log("happy birthday to you!");
@@ -14,3 +15,31 @@ function happyBirthday(username, age) {
 happyBirthday("william", 25);
 happyBirthday("spongebob", 32);
 happyBirthday("patrick", 37);
+*/
+
+// example two
+function add(x, y) {
+    let result = x + y;
+    return result;
+}
+
+function subtract(x, y) {
+    return x - y;
+}
+
+function multiply(x, y) {
+    return x * y;
+}
+
+function divide(x, y) {
+    return x / y;
+}
+
+let answer = add(2, 3);
+console.log(answer);
+let answer1 = subtract(2, 3);
+console.log(answer1);
+let answer2 = multiply(2, 3);
+console.log(answer2);
+let answer3 = divide(2, 3);
+console.log(answer3);
