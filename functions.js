@@ -47,6 +47,7 @@ console.log(answer3);
 */
 
 // example three
+/*
 function isEven(number) {
     if(number % 2 == 0) {
         return true;
@@ -62,3 +63,23 @@ function isEven(number) {
 console.log(isEven(10));
 console.log(isEven(11));
 console.log(isEven(12));
+*/
+
+// example four
+function isValidEmail(email) {
+    if(email.includes("@")) {
+        return true;
+    }
+    else {
+        return false;
+    }
+
+    // or you can use this method:
+    // return email.includes("@") ? true : false;
+}
+
+console.log(isValidEmail("Bro@fake.com"));
+console.log(isValidEmail("Brofake.com"));
+console.log(isValidEmail("elonmusk.com"));
+console.log(isValidEmail("elonmusk.com"));
+console.log(isValidEmail("zuckonit@meta.com"));
