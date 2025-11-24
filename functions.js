@@ -18,6 +18,7 @@ happyBirthday("patrick", 37);
 */
 
 // example two
+/*
 function add(x, y) {
     let result = x + y;
     return result;
@@ -43,3 +44,21 @@ let answer2 = multiply(2, 3);
 console.log(answer2);
 let answer3 = divide(2, 3);
 console.log(answer3);
+*/
+
+// example three
+function isEven(number) {
+    if(number % 2 == 0) {
+        return true;
+    }
+    else {
+        return false;
+    }
+
+    // or you can use this method:
+    // return number % 2 == 0 ? true : false;
+}
+
+console.log(isEven(10));
+console.log(isEven(11));
+console.log(isEven(12));
