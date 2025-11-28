@@ -17,3 +17,26 @@ fruits.unshift("mango");
 console.log(fruits);
 console.log(fruits[0]);
 console.log(fruits[1]);
+
+// getting the length of the array
+let numOfFruits = fruits.length;
+console.log(numOfFruits);
+
+// searching for an element in the array
+let index = fruits.indexOf("apple");
+console.log(index);
+
+// loops through all elements in the array and print them
+for(let i = 0; i < fruits.length; i++) {
+    console.log(fruits[i]);
+}
+
+// loops through all elements in the array and prints every other element
+for(let i = 0; i < fruits.length; i+=2) {
+    console.log(fruits[i]);
+}
+
+// loops through all elements in the array and prints it in reverse
+for(let i = fruits.length - 1; i >= 0; i--) {
+    console.log(fruits[i]);
+}
