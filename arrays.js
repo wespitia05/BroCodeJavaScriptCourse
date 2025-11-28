@@ -40,3 +40,15 @@ for(let i = 0; i < fruits.length; i+=2) {
 for(let i = fruits.length - 1; i >= 0; i--) {
     console.log(fruits[i]);
 }
+
+// sorts the fruits then uses for loop to print them sorted
+fruits.sort();
+for(let fruit of fruits) {
+    console.log(fruit);
+}
+
+// sorts the fruits in reverse then uses for loop to print them sorted in reverse
+fruits.sort().reverse();
+for(let fruit of fruits) {
+    console.log(fruit);
+}
