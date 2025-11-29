@@ -4,6 +4,7 @@
 //                   spread = expands an array into separate elements
 //                   rest = bundles separate elements into an array
 
+/*
 function openFridge(...foods) {
     console.log(foods); // displays as an array
     console.log(...foods); // spread operator separates them
@@ -23,3 +24,26 @@ const food5 = "ramen";
 
 const foods = getFood(food1, food2, food3, food4, food5);
 console.groupCollapsed(foods);
+*/
+
+function sum(...numbers) {
+    let result = 0;
+    for(let number of numbers) {
+        result += number;
+    }
+    return result;
+}
+
+function getAverage(...numbers) {
+    let result = 0;
+    for(let number of numbers) {
+        result += number;
+    }
+    return result / numbers.length;
+}
+
+const total = sum(1, 2, 3, 4, 5);
+const average = getAverage(75, 100, 85, 90, 50);
+
+console.log(`your total is $${total}`);
+console.log(`your average is ${average}`);
