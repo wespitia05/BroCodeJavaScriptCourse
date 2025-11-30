@@ -32,3 +32,12 @@ input {
     text-align: center;
     font-weight: bold;
 }
+
+#diceResult {
+    margin: 25px;
+}
+
+#diceImgs img{
+    width: 150px;
+    margin: 5px;
+}
