@@ -8,6 +8,7 @@
 
 //            "hey, when you're done, call this next"
 
+/*
 hello(goodbye);
 hello(leave);
 hello(wait);
@@ -27,4 +28,21 @@ function wait() {
 
 function goodbye() {
     console.log("goodbye!");
+}
+*/
+
+sum(displayConsole, 1, 2);
+sum(displayPage, 1, 2);
+
+function sum(callback, x, y) {
+    let result = x + y;
+    callback(result);
+}
+
+function displayConsole(result) {
+    console.log(result);
+}
+
+function displayPage(result) {
+    document.getElementById("myH1").textContent = result;
 }
