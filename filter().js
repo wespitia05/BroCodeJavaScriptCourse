@@ -17,6 +17,7 @@ function isOdd(element) {
 }
 */
 
+/*
 const ages = [16, 17, 18, 18, 19, 20, 60];
 let adults = ages.filter(isAdult);
 let children = ages.filter(isChild);
@@ -30,4 +31,20 @@ function isAdult(element) {
 
 function isChild(element) {
     return element < 18;
+}
+*/
+
+const words = ["apple", "orange", "banana", "kiwi", "pomegranate", "coconut"];
+const shortWords = words.filter(getShortWords);
+const longWords = words.filter(getLongWords);
+
+console.log(shortWords);
+console.log(longWords);
+
+function getShortWords(element) {
+    return element.length <= 6;
+}
+
+function getLongWords(element) {
+    return element.length > 6;
 }
