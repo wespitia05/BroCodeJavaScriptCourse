@@ -35,6 +35,18 @@ const squares = numbers.map(function(element) {
 const cubes = numbers.map(function(element) {
     return Math.pow(element, 3);
 })
+const evenNums = numbers.filter(function(element) {
+    return element % 2 === 0;
+});
+const oddNums = numbers.filter(function(element) {
+    return element % 2 !== 0;
+});
+const total = numbers.reduce(function(previous, next) {
+    return previous + next;
+})
 
 console.log(squares);
 console.log(cubes);
+console.log(evenNums);
+console.log(oddNums);
+console.log(total);
