@@ -45,6 +45,7 @@ console.log(extraColors);
 // ---------- EXAMPLE 4 ---------- //
 // EXTRACT VALUES FROM OBJECTS
 
+/*
 const person1 = {
     firstName: "spongebob",
     lastName: "squarepants",
@@ -64,3 +65,29 @@ console.log(firstName);
 console.log(lastName);
 console.log(age);
 console.log(job);
+*/
+
+// ---------- EXAMPLE 5 ---------- //
+// DESTRUCTURE IN FUNCTION PARAMETERS
+
+function displayPerson({firstName, lastName, age, job="unemployed"}) {
+    console.log(`name: ${firstName} ${lastName}`);
+    console.log(`age: ${age}`);
+    console.log(`job: ${job}`);
+}
+
+const person1 = {
+    firstName: "spongebob",
+    lastName: "squarepants",
+    age: 30,
+    job: "fry cook"
+}
+
+const person2 = {
+    firstName: "patrick",
+    lastName: "star",
+    age: 34
+}
+
+displayPerson(person1);
+displayPerson(person2);
