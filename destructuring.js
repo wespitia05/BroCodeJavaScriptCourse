@@ -31,6 +31,7 @@ console.log(colors);
 // ---------- EXAMPLE 3 ---------- //
 // ASSIGN ARRAY ELEMENTS TO VARIABLES
 
+/*
 const colors = ["red", "green", "blue", "black", "white"];
 
 const [firstColor, secondColor, thirdColor, ...extraColors] = colors;
@@ -39,3 +40,27 @@ console.log(firstColor);
 console.log(secondColor);
 console.log(thirdColor);
 console.log(extraColors);
+*/
+
+// ---------- EXAMPLE 4 ---------- //
+// EXTRACT VALUES FROM OBJECTS
+
+const person1 = {
+    firstName: "spongebob",
+    lastName: "squarepants",
+    age: 30,
+    job: "fry cook"
+}
+
+const person2 = {
+    firstName: "patrick",
+    lastName: "star",
+    age: 34
+}
+
+const {firstName, lastName, age, job="unemployed"} = person2;
+
+console.log(firstName);
+console.log(lastName);
+console.log(age);
+console.log(job);
