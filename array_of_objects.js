@@ -40,3 +40,25 @@ console.log(fruitColors);
 // creates an array with just fruit calories
 const fruitCalories = fruits.map(fruit => fruit.calories);
 console.log(fruitCalories);
+
+// ---------- filter() ---------- //
+// filters and creates an array of just yellow color
+const yellowFruits = fruits.filter(fruit => fruit.color === "yellow");
+console.log(yellowFruits);
+
+// filters and creates an array of fruits with less than 100 calories
+const lowCalorieFruits = fruits.filter(fruit => fruit.calories < 100);
+console.log(lowCalorieFruits);
+
+// filters and creates an array of fruits with more than 100 calories
+const highCalorieFruits = fruits.filter(fruit => fruit.calories > 100);
+console.log(highCalorieFruits);
+
+// ---------- reduce() ---------- //
+// returns the fruit with the most amount of calories
+const maxFruit = fruits.reduce((max, fruit) => fruit.calories > max.calories ? fruit : max);
+console.log(maxFruit);
+
+// returns the fruit with the least amount of calories
+const minFruit = fruits.reduce((min, fruit) => fruit.calories < min.calories ? fruit : min);
+console.log(minFruit);
