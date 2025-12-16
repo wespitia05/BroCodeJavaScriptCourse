@@ -6,6 +6,7 @@
 
 const date = new Date();
 
+/*
 const year = date.getFullYear();
 const month = date.getMonth();
 const day = date.getDate();
@@ -20,3 +21,23 @@ console.log(day);
 console.log(hour);
 console.log(seconds);
 console.log(dayOfWeek);
+*/
+
+date.setFullYear(2024);
+date.setMonth(0);
+date.setDate(1);
+date.setHours(2);
+date.setMinutes(3);
+date.setSeconds(4);
+
+console.log(date);
+
+const date1 = new Date("2023-12-31");
+const date2 = new Date("2023-12-30");
+
+if(date2 > date1) {
+    console.log("happy new year");
+}
+else {
+    console.log("nah");
+}
