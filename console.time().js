@@ -5,6 +5,7 @@
 // console.time("label");
 // console.timeEnd("label");
 
+/*
 console.time("test");
 
 for(let i = 0; i < 1000000; i++) {
@@ -12,3 +13,27 @@ for(let i = 0; i < 1000000; i++) {
 }
 
 console.timeEnd("test");
+*/
+
+function loadData() {
+    console.time("loadData");
+
+    for(let i = 0; i < 1000; i++) {
+        // pretend to load some data
+    }
+
+    console.timeEnd("loadData");
+}
+
+function processData() {
+    console.time("processData");
+
+    for(let i = 0; i < 100000; i++) {
+        // pretend to load some data
+    }
+
+    console.timeEnd("processData");
+}
+
+loadData();
+processData();
