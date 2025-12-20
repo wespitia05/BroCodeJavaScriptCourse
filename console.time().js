@@ -4,3 +4,11 @@
 
 // console.time("label");
 // console.timeEnd("label");
+
+console.time("test");
+
+for(let i = 0; i < 1000000; i++) {
+    // do some code here
+}
+
+console.timeEnd("test");
