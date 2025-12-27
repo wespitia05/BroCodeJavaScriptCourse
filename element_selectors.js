@@ -67,6 +67,18 @@ console.log(h4Elements); // displays html collection and its properties
 */
 
 // selects first element in the specified query
-const element = document.querySelector(".fruits");
+// const element = document.querySelector(".fruits");
 
-element.style.backgroundColor = "yellow";
+// element.style.backgroundColor = "yellow";
+
+const fruits = document.querySelectorAll(".fruits");
+const foods = document.querySelectorAll("li");
+
+fruits[0].style.backgroundColor = "yellow";
+fruits[2].style.backgroundColor = "yellow";
+
+foods[0].style.backgroundColor = "lightgreen";
+
+foods.forEach(food => {
+    food.style.backgroundColor = "lightgreen";
+})
