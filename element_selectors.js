@@ -36,13 +36,14 @@ console.log(myHeading); // displays html element + style
 // console.log(fruits); // displays html collection of fruits along with its properties
 
 // selecting tag name h4 by its tag name
-const h4Elements = document.getElementsByTagName("h4");
-const liElements = document.getElementsByTagName("li");
+// const h4Elements = document.getElementsByTagName("h4");
+// const liElements = document.getElementsByTagName("li");
 
 // highlights specified h4 element yellow
 // h4Elements[0].style.backgroundColor = "yellow";
 
 // highlights all h4 elements yellow using enhanced for loop
+/*
 for(let h4Element of h4Elements) {
     h4Element.style.backgroundColor = "yellow";
 }
@@ -63,3 +64,9 @@ Array.from(liElements).forEach(liElement => {
 })
 
 console.log(h4Elements); // displays html collection and its properties
+*/
+
+// selects first element in the specified query
+const element = document.querySelector(".fruits");
+
+element.style.backgroundColor = "yellow";
