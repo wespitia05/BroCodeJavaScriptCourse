@@ -7,3 +7,10 @@
 // 3. document.getElementsByTagName() // html collection
 // 4. document.querySelector()        // element or null
 // 5. document.querySelectorAll()     // nodelist
+
+//selecting h1 element by its ID
+const myHeading = document.getElementById("my-heading");
+myHeading.style.backgroundColor = "yellow";
+myHeading.style.textAlign = "center";
+
+console.log(myHeading); // displays html element + style
