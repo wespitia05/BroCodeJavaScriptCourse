@@ -69,6 +69,7 @@ nextSibling2.style.backgroundColor = "yellow";
 */
 
 // ---------- .parentElement ---------- //
+/*
 // highlights the parent of the selected element
 // apple, orange, banana -> parent: fruits
 // carrots, onions, potatoes -> parent: vegetables
@@ -76,3 +77,10 @@ nextSibling2.style.backgroundColor = "yellow";
 const element = document.getElementById("apple");
 const parent = element.parentElement;
 parent.style.backgroundColor = "yellow";
+*/
+
+// ---------- .children ---------- //
+// highlights the parent of the selected element
+const element = document.getElementById("fruits");
+const children = element.children;
+children.style.backgroundColor = "yellow";
