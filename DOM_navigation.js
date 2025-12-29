@@ -54,6 +54,7 @@ nextSibling2.style.backgroundColor = "yellow";
 */
 
 // ---------- .previousElementSibling ---------- //
+/*
 // highlights the previous element sibling yellow
 // pie -> cake ; ice cream -> pie
 const element = document.getElementById("pie");
@@ -65,3 +66,13 @@ nextSibling.style.backgroundColor = "yellow";
 const element2 = document.getElementById("vegetables");
 const nextSibling2 = element2.previousElementSibling;
 nextSibling2.style.backgroundColor = "yellow";
+*/
+
+// ---------- .parentElement ---------- //
+// highlights the parent of the selected element
+// apple, orange, banana -> parent: fruits
+// carrots, onions, potatoes -> parent: vegetables
+// cake, pie, ice cream -> parent: desserts
+const element = document.getElementById("apple");
+const parent = element.parentElement;
+parent.style.backgroundColor = "yellow";
