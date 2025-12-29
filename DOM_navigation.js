@@ -39,6 +39,7 @@ ulElements.forEach(ulElement => {
 */
 
 // ---------- .nextElementSibling ---------- //
+/*
 // highlights the next element sibling yellow
 // apple -> orange ; orange -> banana
 const element = document.getElementById("apple");
@@ -49,4 +50,18 @@ nextSibling.style.backgroundColor = "yellow";
 // fruits -> vegetables ; vegetables -> desserts
 const element2 = document.getElementById("fruits");
 const nextSibling2 = element2.nextElementSibling;
+nextSibling2.style.backgroundColor = "yellow";
+*/
+
+// ---------- .previousElementSibling ---------- //
+// highlights the previous element sibling yellow
+// pie -> cake ; ice cream -> pie
+const element = document.getElementById("pie");
+const nextSibling = element.previousElementSibling;
+nextSibling.style.backgroundColor = "yellow";
+
+// highlights the previous element sibling of the unordered list vegetables
+// vegetables -> fruits ; desserts -> vegetables
+const element2 = document.getElementById("vegetables");
+const nextSibling2 = element2.previousElementSibling;
 nextSibling2.style.backgroundColor = "yellow";
