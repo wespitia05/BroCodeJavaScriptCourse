@@ -3,7 +3,7 @@
 
 // .firstElementChild
 // .lastElementChild
-// .nextElementChild
+// .nextElementSibling
 // .previousElementSibling
 // .parentElement
 // .children
@@ -24,6 +24,7 @@ ulElements.forEach(ulElement => {
 */
 
 // ---------- .lastElementChild ---------- //
+/*
 // highlights the last element of the fruits unordered list
 const element = document.getElementById("fruits");
 const lastChild = element.lastElementChild;
@@ -35,3 +36,17 @@ ulElements.forEach(ulElement => {
     const lastChild = ulElement.lastElementChild;
     lastChild.style.backgroundColor = "yellow";
 })
+*/
+
+// ---------- .nextElementSibling ---------- //
+// highlights the next element sibling yellow
+// apple -> orange ; orange -> banana
+const element = document.getElementById("apple");
+const nextSibling = element.nextElementSibling;
+nextSibling.style.backgroundColor = "yellow";
+
+// highlights the next element sibling of the unordered list fruits
+// fruits -> vegetables ; vegetables -> desserts
+const element2 = document.getElementById("fruits");
+const nextSibling2 = element2.nextElementSibling;
+nextSibling2.style.backgroundColor = "yellow";
