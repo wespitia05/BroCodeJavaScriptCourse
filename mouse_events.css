@@ -1,1 +1,12 @@
 /* mouse events styling page */
+
+#myBox {
+    background-color: lightgreen;
+    width: 300px;
+    height: 300px;
+    font-size: 4.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
