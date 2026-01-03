@@ -2,10 +2,14 @@
 //                 events: keydown, keyup
 //                 document.addEventListener(event, callback)
 
+const myBox = document.getElementById("myBox");
+
 document.addEventListener("keydown", event => {
-    console.log(`key down = ${event.key}`);
+    myBox.textContent = "😵";
+    myBox.style.backgroundColor = "tomato";
 })
 
 document.addEventListener("keyup", event => {
-    console.log(`key up = ${event.key}`);
+    myBox.textContent = "😄";
+    myBox.style.backgroundColor = "lightblue";
 })
