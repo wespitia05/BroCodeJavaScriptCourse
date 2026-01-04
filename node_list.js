@@ -23,6 +23,7 @@ buttons.forEach(button => {
 */
 
 // MOUSEOVER + MOUSEOUT event listener
+/*
 buttons.forEach(button => {
     button.addEventListener("mouseover", event => {
         event.target.style.backgroundColor = "hsl(240, 100%, 40%)";
@@ -34,3 +35,14 @@ buttons.forEach(button => {
         event.target.style.backgroundColor = "hsl(240, 100%, 60%)";
     })
 })
+*/
+
+// ADD EN ELEMENT
+const newButton = document.createElement("button"); // STEP 1
+newButton.textContent = "Button 5"; // STEP 2
+newButton.classList = "myButtons";
+document.body.appendChild(newButton); // STEP 3
+
+// reassign buttons to add new button to the nodelist
+buttons = document.querySelectorAll(".myButtons");
+console.log(buttons);
