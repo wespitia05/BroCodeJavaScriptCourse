@@ -37,7 +37,8 @@ buttons.forEach(button => {
 })
 */
 
-// ADD EN ELEMENT
+// ADD AN ELEMENT
+/*
 const newButton = document.createElement("button"); // STEP 1
 newButton.textContent = "Button 5"; // STEP 2
 newButton.classList = "myButtons";
@@ -46,3 +47,13 @@ document.body.appendChild(newButton); // STEP 3
 // reassign buttons to add new button to the nodelist
 buttons = document.querySelectorAll(".myButtons");
 console.log(buttons);
+*/
+
+// REMOVE AN ELEMENT
+buttons.forEach(button => {
+    button.addEventListener("click", event => {
+        event.target.remove();
+        // updates node list after removing any buttons
+        buttons = document.querySelectorAll(".myButtons");
+    })
+});
