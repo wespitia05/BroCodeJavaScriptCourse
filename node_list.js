@@ -6,7 +6,16 @@
 let buttons = document.querySelectorAll(".myButtons");
 
 // add hml/css properties
+/*
 buttons.forEach(button => {
     button.style.backgroundColor = "green";
     button.textContent += " 😄";
 })
+*/
+
+// CLICK event listener
+buttons.forEach(button => {
+    button.addEventListener("click", event => {
+        event.target.style.backgroundColor = "red";
+    })
+});
