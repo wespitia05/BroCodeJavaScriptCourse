@@ -9,6 +9,7 @@
 // replace(oldClass, newClass)
 // contains()
 
+const myH1 = document.getElementById("myH1");
 const myButton = document.getElementById("myButton");
 
 // myButton.classList.add("enabled");
@@ -34,7 +35,17 @@ myButton.addEventListener("mouseout", event => {
 });
 */
 
+myH1.classList.add("enabled");
 myButton.classList.add("enabled");
+
+myH1.addEventListener("click", event => {
+    if(event.target.classList.contains("disabled")) {
+        event.target.textContent += " 🤬";
+    }
+    else {
+        event.target.classList.replace("enabled", "disabled");
+    }
+});
 
 myButton.addEventListener("click", event => {
     if(event.target.classList.contains("disabled")) {

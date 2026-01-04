@@ -1,5 +1,9 @@
 /* class list styling page */
 
+#myH1 {
+    font-size: 5rem;
+}
+
 #myButton {
     font-size: 4rem;
     margin: 10px;
