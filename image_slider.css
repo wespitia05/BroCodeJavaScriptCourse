@@ -1,1 +1,17 @@
 /* image slider styling page */
+
+.slider {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider img {
+    width: 80%;
+    display: none;
+}
+
+img.displaySlide {
+    display: block;
+}
