@@ -52,6 +52,7 @@ console.log(jsonPeople);
 
 // ---------- PARSE ---------- //
 
+/*
 const jsonNames = `["Spongebob", "Patrick", "squidward", "Sandy"]`;
 const jsonPerson = `{"name": "Spongebob", "age": 30, "isEmployed": true, "hobbies": ["jellyfishing", "karate", "cooking"]}`;
 const jsonPeople =`[{"name": "Spongebob", "age": 30, "isEmployed": true},
@@ -69,3 +70,9 @@ console.log(jsonPerson);
 console.log(parsedPerson);
 console.log(jsonPeople);
 console.log(parsedPeople);
+*/
+
+// fetching person from the person json file
+fetch("json_person.json")
+    .then(response => response.json())
+    .then(value => console.log(value))
