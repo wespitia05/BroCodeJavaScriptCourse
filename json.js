@@ -5,6 +5,9 @@
 //        JSON.stringify() = converts a JS object to a JSON string
 //        JSON.parse() = converts a JSON string to a JS object
 
+
+// ---------- STRINGIFY ---------- //
+/*
 const names = ["Spongebob", "Patrick", "squidward", "Sandy"];
 const person = {
     "name": "Spongebob",
@@ -45,3 +48,24 @@ console.log(person);
 console.log(jsonPerson);
 console.log(people);
 console.log(jsonPeople);
+*/
+
+// ---------- PARSE ---------- //
+
+const jsonNames = `["Spongebob", "Patrick", "squidward", "Sandy"]`;
+const jsonPerson = `{"name": "Spongebob", "age": 30, "isEmployed": true, "hobbies": ["jellyfishing", "karate", "cooking"]}`;
+const jsonPeople =`[{"name": "Spongebob", "age": 30, "isEmployed": true},
+               {"name": "Patrick", "age": 34, "isEmployed": false},
+               {"name": "Squidward", "age": 50, "isEmployed": true},
+               {"name": "Sandy", "age": 27, "isEmployed": false}]`;
+
+const parsedNames = JSON.parse(jsonPeople);
+const parsedPerson = JSON.parse(jsonPerson);
+const parsedPeople = JSON.parse(jsonPeople);
+
+console.log(jsonNames);
+console.log(parsedNames);
+console.log(jsonPerson);
+console.log(parsedPerson);
+console.log(jsonPeople);
+console.log(parsedPeople);
