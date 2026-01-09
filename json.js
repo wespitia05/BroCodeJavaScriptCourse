@@ -76,3 +76,8 @@ console.log(parsedPeople);
 fetch("json_person.json")
     .then(response => response.json())
     .then(value => console.log(value))
+
+// fetching people from the people json file
+fetch("json_people.json")
+    .then(response => response.json())
+    .then(value => console.log(value))
