@@ -81,3 +81,8 @@ fetch("json_person.json")
 fetch("json_people.json")
     .then(response => response.json())
     .then(value => console.log(value))
+
+// fetching names from the names json file
+fetch("json_names.json")
+    .then(response => response.json())
+    .then(value => console.log(value))
