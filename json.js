@@ -80,9 +80,14 @@ fetch("json_person.json")
 // fetching people from the people json file
 fetch("json_people.json")
     .then(response => response.json())
-    .then(value => console.log(value))
+    .then(values => values.forEach(value => console.log(value)))
+    .catch(error => console.error(error));
+fetch("json_people.json")
+    .then(response => response.json())
+    .then(values => values.forEach(value => console.log(value.names)))
+    .catch(error => console.error(error));
 
 // fetching names from the names json file
 fetch("json_names.json")
     .then(response => response.json())
-    .then(value => console.log(value))
+    .then(values => values.forEach(value => console.log(value)))
