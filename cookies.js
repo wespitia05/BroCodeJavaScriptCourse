@@ -15,6 +15,8 @@ console.log(document.cookie);
 */
 
 setCookie("email", "Sponge@gmail.com", 365);
+deleteCookie("lastName");
+deleteCookie("firstName");
 
 console.log(document.cookie);
 
@@ -23,4 +25,8 @@ function setCookie(name, value, daysToLive) {
     date.setTime(date.getTime() + daysToLive * 24 * 60 * 60 * 1000);
     let expires = "expires=" + date.toUTCString();
     document.cookie = `${name}=${value}; ${expires}; path=/`;
+}
+
+function deleteCookie(name) {
+    setCookie(name, null, null);
 }
