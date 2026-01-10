@@ -6,6 +6,7 @@
 //         fetch(url, {options})
 
 // using fetch()
+/*
 fetch("https://pokeapi.co/api/v2/pokemon/pikachu")
     .then(response => {
         if(!response.ok) {
@@ -15,6 +16,7 @@ fetch("https://pokeapi.co/api/v2/pokemon/pikachu")
     })
     .then(data => console.log(data.name))
     .catch(error => console.error(error));
+*/
 
 // using async()
 async function fetchData() {
@@ -28,10 +30,16 @@ async function fetchData() {
 
         const data = await response.json();
         const pokemonSprite = data.sprites.front_default;
+        const pokemonNameDisplay = data.name;
+        const pokemonIdDisplay = data.id;
+        const pokemonWeightDisplay = data.weight;
         const imgElement = document.getElementById("pokemonSprite");
+        const h3Element = document.getElementById("pokemonNameDisplay");
         
+        h3Element.textContent = `Name: ${pokemonNameDisplay}\nID: ${pokemonIdDisplay}\nWeight: ${pokemonWeightDisplay}`;
         imgElement.src = pokemonSprite;
         imgElement.style.display = "block";
+        imgElement.style.width = "200px"
     }
     catch(error) {
         console.error(error);
