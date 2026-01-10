@@ -14,9 +14,13 @@ document.cookie = "lastName=Squarepants; expires=Sun, 1 January 2030 12:00:00 ES
 console.log(document.cookie);
 */
 
-setCookie("email", "Sponge@gmail.com", 365);
-deleteCookie("lastName");
-deleteCookie("firstName");
+setCookie("firstName", "Spongebob", 365);
+setCookie("lastName", "Squarepants", 365);
+console.log(getCookie("firstName"));
+console.log(getCookie("lastName"));
+// deleteCookie("lastName");
+// deleteCookie("firstName");
+// deleteCookie("email");
 
 console.log(document.cookie);
 
@@ -29,4 +33,18 @@ function setCookie(name, value, daysToLive) {
 
 function deleteCookie(name) {
     setCookie(name, null, null);
+}
+
+function getCookie(name) {
+    const cDecoded = decodeURIComponent(document.cookie);
+    const cArray = cDecoded.split("; ");
+    let result = null;
+
+    cArray.forEach(element => {
+        if(element.indexOf(name) == 0) {
+            result = element.substring(name.length + 1);
+        }
+    });
+
+    return result;
 }
